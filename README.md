@@ -3,7 +3,7 @@
 Expose a WebSocket connection on the server with
 JSON-encoded strings as a stream.
 
-Fix for Primus.js usage -- changed 
+Fix for Primus.js usage
 
 ```js
 this.ws.send(JSON.stringify(msg));
