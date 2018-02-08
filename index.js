@@ -24,7 +24,7 @@ util.inherits(WebSocketJSONStream, Duplex);
 
 WebSocketJSONStream.prototype._read = function() {};
 WebSocketJSONStream.prototype._write = function(msg, encoding, next) {
-  this.ws.send(JSON.stringify(msg));
+  this.ws.write(JSON.stringify(msg));
   next();
 };
 
