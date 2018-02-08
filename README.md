@@ -10,9 +10,9 @@ this.ws.send(JSON.stringify(msg));
 ```
 to
 ```js
-this.ws.send(JSON.stringify(msg));
+this.ws.write(JSON.stringify(msg));
 ```
-to match Primus syntax
+to match Primus spark.write() syntax
 
 ## Usage
 
